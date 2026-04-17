@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InfraReportingSystem.ServiceAbstractions.Repositories { 
 
-    public interface IRepositoy<T> where T : class 
+    public interface IRepository<T> where T : class 
     {
         Task<T?> GetByIdAsync(int id);
         Task<IEnumerable<T>> GetAllAsync();
