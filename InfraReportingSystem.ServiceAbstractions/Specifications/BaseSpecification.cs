@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InfraReportingSystem.Services.Specifications
+namespace InfraReportingSystem.ServiceAbstractions.Specifications
 {
     public abstract class BaseSpecification<T> : ISpecification<T>
     {
