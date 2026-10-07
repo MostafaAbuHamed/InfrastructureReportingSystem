@@ -3,6 +3,16 @@
 ## Overview
 The **Infrastructure Reporting System** is a comprehensive .NET 9 Web API designed to facilitate the reporting, management, and resolution of public infrastructure issues (like broken roads, pipe leaks, etc.). It serves as the back-end for a cross-platform solution (interfacing with an Angular front-end at `localhost:4200`) where public users can report issues, authorities can assign them, workers can track and complete tasks, and administrators can manage the entire system.
 
+## My Role
+
+This is the backend of my graduation project (graded **Excellent**). I was part of the team and my main contributions were:
+
+- **Authentication and security:** JWT access and refresh tokens, OTP verification and account lockout
+- **AI service:** built the FastAPI image-analysis service ([IRS.AI](https://github.com/MostafaAbuHamed/IRS.AI)) that classifies damage photos and generates issue descriptions
+- **Deployment:** Docker packaging and CI/CD with GitHub Actions for the AI service
+
+The full submission snapshot (backend, Angular frontend, AI service, documentation) is in [Infrastructure_Reporting_System](https://github.com/MostafaAbuHamed/Infrastructure_Reporting_System).
+
 ## Architecture
 The solution follows **Clean Architecture (Onion Architecture)** principles, ensuring a separation of concerns and a highly maintainable, testable codebase.
 
@@ -59,7 +69,8 @@ The project is divided into the following layers:
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone -b Dev https://github.com/MostafaAbuHamed/InfrastructureReportingSystem.git
+   cd InfrastructureReportingSystem
    ```
 
 2. **Configure Application Settings:**
